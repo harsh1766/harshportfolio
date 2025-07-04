@@ -47,12 +47,16 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Content - Profile Image Placeholder */}
+          {/* Right Content - Profile Image */}
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl">
-                <div className="w-72 h-72 md:w-88 md:h-88 bg-white rounded-full flex items-center justify-center">
-                  <div className="text-6xl md:text-8xl">👨‍💻</div>
+              <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl p-2">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img 
+                    src="https://i.postimg.cc/hGfZJP4y/file-00000000b96061fb85aa2a0b8eb3027f-1.png" 
+                    alt="Harsh Shekhar Borse"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               

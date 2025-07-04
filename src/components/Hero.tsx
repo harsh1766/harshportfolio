@@ -15,7 +15,7 @@ const Hero = () => {
               </div>
               
               <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
-                Harsh Shekhar
+                Harsh
                 <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                   Borse
                 </span>
@@ -55,7 +55,7 @@ const Hero = () => {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
                     src="https://i.postimg.cc/hGfZJP4y/file-00000000b96061fb85aa2a0b8eb3027f-1.png" 
-                    alt="Harsh Shekhar Borse"
+                    alt="Harsh Borse"
                     className="w-full h-full object-cover object-center"
                     style={{ objectPosition: "center 20%" }}
                   />

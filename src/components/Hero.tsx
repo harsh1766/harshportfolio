@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
@@ -55,7 +56,8 @@ const Hero = () => {
                   <img 
                     src="https://i.postimg.cc/hGfZJP4y/file-00000000b96061fb85aa2a0b8eb3027f-1.png" 
                     alt="Harsh Shekhar Borse"
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-center"
+                    style={{ objectPosition: "center 20%" }}
                   />
                 </div>
               </div>
@@ -77,3 +79,4 @@ const Hero = () => {
 };
 
 export default Hero;
+

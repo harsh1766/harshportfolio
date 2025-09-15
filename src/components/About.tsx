@@ -1,7 +1,5 @@
-
 const About = () => {
-  return (
-    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -62,7 +60,9 @@ const About = () => {
                   <span className="text-2xl font-bold text-purple-600">84.60%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style={{width: '84.6%'}}></div>
+                  <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style={{
+                  width: '84.6%'
+                }}></div>
                 </div>
               </div>
 
@@ -73,7 +73,9 @@ const About = () => {
                   <span className="text-2xl font-bold text-blue-600">65%</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style={{width: '65%'}}></div>
+                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style={{
+                  width: '65%'
+                }}></div>
                 </div>
               </div>
 
@@ -81,18 +83,18 @@ const About = () => {
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
                   <h4 className="font-semibold text-gray-900">Current CGPA</h4>
-                  <span className="text-2xl font-bold text-green-600">9.00</span>
+                  <span className="text-2xl font-bold text-green-600">8.95</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style={{width: '90%'}}></div>
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style={{
+                  width: '90%'
+                }}></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default About;

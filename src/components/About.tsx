@@ -17,7 +17,7 @@ const About = () => {
           <div className="space-y-6">
             <div className="prose prose-lg text-gray-600">
               <p>
-                I'm a dedicated first-year B.Tech student specializing in Artificial Intelligence 
+                I'm a dedicated second-year B.Tech student specializing in Artificial Intelligence 
                 and Machine Learning at my university. My journey in tech is driven by an insatiable 
                 curiosity to understand how AI can solve real-world problems and transform industries.
               </p>
@@ -80,7 +80,7 @@ const About = () => {
               {/* Current SGPA */}
               <div className="bg-white rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-semibold text-gray-900">First Semester SGPA</h4>
+                  <h4 className="font-semibold text-gray-900">Current CGPA</h4>
                   <span className="text-2xl font-bold text-green-600">9.00</span>
                 </div>
                 <div className="w-full bg-gray-200 rounded-full h-2">

@@ -93,7 +93,7 @@ const Contact = () => {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
-                  <span>First-year B.Tech AIML student</span>
+                  <span>Second-year B.Tech AIML student</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-blue-500 rounded-full"></span>

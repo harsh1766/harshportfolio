@@ -26,7 +26,7 @@ const Hero = () => {
               </h2>
               
               <p className="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
-                First-year B.Tech student specializing in Artificial Intelligence and Machine Learning, 
+                Second-year B.Tech student specializing in Artificial Intelligence and Machine Learning, 
                 dedicated to exploring the fascinating world of AI through continuous learning and practical experiences.
               </p>
               

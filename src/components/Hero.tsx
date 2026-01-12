@@ -50,12 +50,12 @@ const Hero = () => {
           {/* Right Content - Profile Image */}
           <div className="lg:w-1/2 flex justify-center">
             <div className="relative">
-              <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl p-2">
+              <div className="w-80 h-80 md:w-96 md:h-96 bg-gradient-to-br from-purple-400 to-blue-500 rounded-full flex items-center justify-center shadow-2xl p-2 transition-all duration-300 ease-out hover:scale-105 hover:shadow-purple-500/25 hover:shadow-[0_25px_50px_-12px_rgba(168,85,247,0.35)] cursor-pointer">
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img 
                     src={profilePhoto} 
                     alt="Harsh Borse"
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-center transition-all duration-300 hover:brightness-105"
                   />
                 </div>
               </div>

@@ -1,11 +1,12 @@
 const About = () => {
-  return <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+  return (
+    <section id="about" className="py-20 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             About Me
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Passionate about AI and ML, constantly learning and growing
           </p>
         </div>
@@ -13,7 +14,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6">
-            <div className="prose prose-lg text-gray-600">
+            <div className="prose prose-lg text-gray-600 dark:text-gray-300">
               <p>
                 I'm a dedicated second-year B.Tech student specializing in Artificial Intelligence 
                 and Machine Learning at my university. My journey in tech is driven by an insatiable 
@@ -35,66 +36,62 @@ const About = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Problem Solver</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">Problem Solver</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Team Player</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">Team Player</span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-gray-700 font-medium">Quick Learner</span>
+                <span className="text-gray-700 dark:text-gray-300 font-medium">Quick Learner</span>
               </div>
             </div>
           </div>
 
           {/* Right Content - Education Stats */}
-          <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Educational Background</h3>
+          <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Educational Background</h3>
             
             <div className="space-y-6">
               {/* SSC */}
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-semibold text-gray-900">Secondary School Certificate (SSC)</h4>
-                  <span className="text-2xl font-bold text-purple-600">84.60%</span>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Secondary School Certificate (SSC)</h4>
+                  <span className="text-2xl font-bold text-purple-600 dark:text-purple-400">84.60%</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style={{
-                  width: '84.6%'
-                }}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div className="bg-gradient-to-r from-purple-500 to-purple-600 h-2 rounded-full" style={{width: '84.6%'}}></div>
                 </div>
               </div>
 
               {/* HSC */}
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-semibold text-gray-900">Higher Secondary Certificate (HSC)</h4>
-                  <span className="text-2xl font-bold text-blue-600">65%</span>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Higher Secondary Certificate (HSC)</h4>
+                  <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">65%</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style={{
-                  width: '65%'
-                }}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div className="bg-gradient-to-r from-blue-500 to-blue-600 h-2 rounded-full" style={{width: '65%'}}></div>
                 </div>
               </div>
 
               {/* Current SGPA */}
-              <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-sm">
                 <div className="flex justify-between items-center mb-2">
-                  <h4 className="font-semibold text-gray-900">Current CGPA</h4>
-                  <span className="text-2xl font-bold text-green-600">8.95</span>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Current CGPA</h4>
+                  <span className="text-2xl font-bold text-green-600 dark:text-green-400">8.95</span>
                 </div>
-                <div className="w-full bg-gray-200 rounded-full h-2">
-                  <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style={{
-                  width: '90%'
-                }}></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 h-2 rounded-full" style={{width: '90%'}}></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default About;

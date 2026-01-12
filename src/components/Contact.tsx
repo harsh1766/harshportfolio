@@ -33,13 +33,13 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
+    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-300">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Let's Connect
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Have a project in mind or want to discuss AI/ML? I'd love to hear from you!
           </p>
         </div>
@@ -48,8 +48,8 @@ const Contact = () => {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
-              <p className="text-gray-600 mb-8">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Get in Touch</h3>
+              <p className="text-gray-600 dark:text-gray-400 mb-8">
                 I'm always excited to connect with fellow tech enthusiasts, potential collaborators, 
                 or anyone interested in discussing the fascinating world of AI and Machine Learning.
               </p>
@@ -61,10 +61,10 @@ const Contact = () => {
                   <Mail className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Email</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Email</h4>
                   <a 
                     href="mailto:harshborse1809@gmail.com"
-                    className="text-purple-600 hover:text-purple-700 transition-colors"
+                    className="text-purple-600 dark:text-purple-400 hover:text-purple-700 dark:hover:text-purple-300 transition-colors"
                   >
                     harshborse1809@gmail.com
                   </a>
@@ -76,10 +76,10 @@ const Contact = () => {
                   <Phone className="text-white" size={20} />
                 </div>
                 <div>
-                  <h4 className="font-semibold text-gray-900">Phone</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">Phone</h4>
                   <a 
                     href="tel:9130911367"
-                    className="text-green-600 hover:text-green-700 transition-colors"
+                    className="text-green-600 dark:text-green-400 hover:text-green-700 dark:hover:text-green-300 transition-colors"
                   >
                     +91 9130911367
                   </a>
@@ -88,9 +88,9 @@ const Contact = () => {
             </div>
 
             {/* Fun Facts */}
-            <div className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-2xl p-6">
-              <h4 className="font-semibold text-gray-900 mb-4">Quick Facts About Me</h4>
-              <ul className="space-y-2 text-gray-700">
+            <div className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-6">
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-4">Quick Facts About Me</h4>
+              <ul className="space-y-2 text-gray-700 dark:text-gray-300">
                 <li className="flex items-center space-x-2">
                   <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
                   <span>Second-year B.Tech AIML student</span>
@@ -112,13 +112,13 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-6">Send a Message</h3>
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send a Message</h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Name
                   </label>
                   <Input
@@ -128,12 +128,12 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className="w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     placeholder="Your Name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                     Email
                   </label>
                   <Input
@@ -143,14 +143,14 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full"
+                    className="w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                     placeholder="your.email@example.com"
                   />
                 </div>
               </div>
 
               <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Subject
                 </label>
                 <Input
@@ -160,13 +160,13 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full"
+                  className="w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                   placeholder="What's this about?"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                   Message
                 </label>
                 <Textarea
@@ -176,7 +176,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={5}
-                  className="w-full"
+                  className="w-full dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                   placeholder="Tell me about your project or just say hello!"
                 />
               </div>

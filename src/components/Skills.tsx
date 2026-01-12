@@ -1,4 +1,3 @@
-
 const Skills = () => {
   const hardSkills = [
     { name: "HTML", level: 85, icon: "🌐" },
@@ -17,21 +16,21 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
+    <section id="skills" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white dark:from-gray-800 dark:to-gray-900 transition-colors duration-300">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Skills & Expertise
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Continuously developing technical and soft skills to excel in AI/ML
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Hard Skills */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
               <span className="mr-3">💻</span>
               Technical Skills
             </h3>
@@ -42,11 +41,11 @@ const Skills = () => {
                   <div className="flex justify-between items-center">
                     <div className="flex items-center space-x-3">
                       <span className="text-2xl">{skill.icon}</span>
-                      <span className="font-medium text-gray-900">{skill.name}</span>
+                      <span className="font-medium text-gray-900 dark:text-white">{skill.name}</span>
                     </div>
-                    <span className="text-sm font-semibold text-gray-600">{skill.level}%</span>
+                    <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">{skill.level}%</span>
                   </div>
-                  <div className="w-full bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                     <div 
                       className="bg-gradient-to-r from-purple-500 to-blue-500 h-2 rounded-full transition-all duration-1000 ease-out"
                       style={{width: `${skill.level}%`}}
@@ -58,8 +57,8 @@ const Skills = () => {
           </div>
 
           {/* Soft Skills */}
-          <div className="bg-white rounded-2xl p-8 shadow-lg">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8 flex items-center">
               <span className="mr-3">🌟</span>
               Soft Skills
             </h3>
@@ -68,18 +67,18 @@ const Skills = () => {
               {softSkills.map((skill, index) => (
                 <div 
                   key={index} 
-                  className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-6 text-center hover:shadow-md transition-shadow duration-300"
+                  className="bg-gradient-to-br from-purple-50 to-blue-50 dark:from-purple-900/30 dark:to-blue-900/30 rounded-xl p-6 text-center hover:shadow-md transition-shadow duration-300"
                 >
                   <div className="text-4xl mb-3">{skill.icon}</div>
-                  <h4 className="font-semibold text-gray-900">{skill.name}</h4>
+                  <h4 className="font-semibold text-gray-900 dark:text-white">{skill.name}</h4>
                 </div>
               ))}
             </div>
 
             {/* Additional Info */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-blue-100 rounded-xl">
-              <h4 className="font-semibold text-gray-900 mb-2">Learning Goals</h4>
-              <p className="text-gray-700 text-sm">
+            <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-900/40 dark:to-blue-900/40 rounded-xl">
+              <h4 className="font-semibold text-gray-900 dark:text-white mb-2">Learning Goals</h4>
+              <p className="text-gray-700 dark:text-gray-300 text-sm">
                 Currently focusing on deepening my understanding of deep learning frameworks, 
                 data analysis tools, and advancing my Python programming skills for AI applications.
               </p>

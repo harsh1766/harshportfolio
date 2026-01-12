@@ -3,28 +3,28 @@ import profilePhoto from "@/assets/profile-photo.png";
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+    <section id="home" className="pt-20 pb-16 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center justify-between min-h-screen">
           {/* Left Content */}
           <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
             <div className="space-y-6">
-              <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-blue-100 rounded-full text-sm font-medium text-purple-700 mb-4">
+              <div className="inline-block px-4 py-2 bg-gradient-to-r from-purple-100 to-blue-100 dark:from-purple-900/40 dark:to-blue-900/40 rounded-full text-sm font-medium text-purple-700 dark:text-purple-300 mb-4">
                 👋 Hello, I'm
               </div>
               
-              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
                 Harsh
                 <span className="block bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                   Borse
                 </span>
               </h1>
               
-              <h2 className="text-xl md:text-2xl text-gray-600 font-medium">
+              <h2 className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 font-medium">
                 Aspiring AIML Engineer | Passionate Learner | Problem Solver
               </h2>
               
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto lg:mx-0">
+              <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto lg:mx-0">
                 Second-year B.Tech student specializing in Artificial Intelligence and Machine Learning, 
                 dedicated to exploring the fascinating world of AI through continuous learning and practical experiences.
               </p>
@@ -39,7 +39,7 @@ const Hero = () => {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-purple-300 text-purple-600 hover:bg-purple-50 px-8 py-3"
+                  className="border-purple-300 dark:border-purple-600 text-purple-600 dark:text-purple-400 hover:bg-purple-50 dark:hover:bg-purple-900/20 px-8 py-3"
                 >
                   <a href="#about">Learn More</a>
                 </Button>
